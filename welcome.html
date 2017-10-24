@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Wanna Cook</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Catamaran|Josefin+Sans|Satisfy|Russo+One" rel="stylesheet">
+<link rel="stylesheet" href="css/stylew.css">
+
+
+</head>
+
+<body>
+  <body>
+  <div class="animated bounceIn row" id="main" style="padding-right:30px;">
+
+
+      <div id="yrec" class="animated flipInY yrecipie">
+       <h3>Hello!<br/>
+
+      <h1 id="currentuser"></h1>
+        </h3>
+
+      <button class="btn btn-danger" onclick='yrecipeteller();'>
+      Yesterday's recipe
+      <span class="glyphicon glyphicon-send"></span>
+      </button>
+
+      <div>&nbsp</div>
+
+      <button class="btn btn-primary" onclick='signout();window.open("index.html","_self");'>Signout
+      <span class="glyphicon glyphicon-off"></span>
+      </button>
+      </div>
+
+
+    <h1>Wanna Cook</h1>
+    <h2>Cooking Made Easy!</h2>
+
+  </div>
+
+
+  <div class="container animated flipInX" id="select1">
+    <h1>$$ Select the items that are available at your dispense. $$<br/><br/>
+    <a href="#veg">
+    <span style="color: #1abc9c;" class="glyphicon glyphicon-circle-arrow-down"></span>
+    </a>
+    </h1>
+  </div>
+
+    <div class="container animated flipInX" id="select2">
+      <h3>*(Be prepared to be relieved of your woes)*<br/><br/>
+      <span class="glyphicon glyphicon-cutlery" style="color: #E91E63"></span>
+      </h3>
+    </div>
+
+
+
+ <!--veggies-->
+  <div class="row">
+    <div class="col-md-2 animated bounceInLeft" id="veg">
+      <form>
+
+
+      <h1>Veggies&nbsp<span class="glyphicon glyphicon-leaf"></span></h1>
+       <input type="checkbox" name="veggie" value="onion"> Onion</input><br/>
+        <input type="checkbox" name="veggie" value="carrot"> Carrot</input><br/>
+       <input type="checkbox" name="veggie" value="corainder"> Coriander</input><br/>
+     <input type="checkbox" name="veggie" value="beans">Beans</input><br/>
+    <input type="checkbox" name="veggie" value="ladyfinger">Lady's finger</input><br/>
+    <input type="checkbox" name="veggie" value="eggplant">Eggplant</input><br/>
+    <input type="checkbox" name="veggie" value="potato">Potato</input><br/>
+    <input type="checkbox" name="veggie" value="tomato">Tomato</input><br/>
+		<input type="checkbox" name="veggie" value="chilly">Green Chilly</input><br/>
+	<input type="checkbox" name="veggie" value="curry">Curry Leaves</input><br/>
+	<input type="checkbox" name="veggie" value="coconut">Coconut Grating</input><br/>
+	<input type="checkbox" name="veggie" value="cucumber">Cucumber</input><br/>
+	<input type="checkbox" name="veggie" value="capsicum">Capsicum</input><br/>
+
+
+      </form>
+    </div>
+<!--veggies-->
+
+
+<!--fruits-->
+<div class="col-md-2 animated bounceInLeft" id="fruits">
+    <form>
+
+    <h1>Fruits &nbsp<span class="glyphicon glyphicon-apple"></span></h1>
+        <input type="checkbox" name="fruit" value="apple"> Apple</input><br/>
+         <input type="checkbox" name="fruit" value="pineapple">Pine Apple</input><br/>
+                  <input type="checkbox" name="fruit" value="banana">Banana</input><br/>
+         <input type="checkbox" name="fruit" value="lemon">Lemon</input><br/>
+         <input type="checkbox" name="fruit" value="mosambi">Mosambi</input><br/>
+        <input type="checkbox" name="fruit" value="orange"> Orange</input><br/>
+      <input type="checkbox" name="fruit" value="rawmango">Raw Mango</input><br/>
+    <input type="checkbox" name="fruit" value="strawberry">Strawberry</input><br/>
+    <input type="checkbox" name="fruit" value="almond">Almond</input><br/>
+    <input type="checkbox" name="fruit" value="pistachios">Pistachios</input><br/>
+	<input type="checkbox" name="fruit" value="cashew">Cashew</input><br/>
+	<input type="checkbox" name="fruit" value="raisins">Raisins</input><br/>
+	<input type="checkbox" name="fruit" value="safron">Safron</input><br/>
+
+  </form>
+ </div>
+<!--fruits-->
+
+<!--grains-->
+    <div class="col-md-2 animated bounceInLeft" id="grains">
+    <form>
+
+    <h1>Grains&nbsp<span class="glyphicon glyphicon-adjust"></span></h1>
+        <input type="checkbox" name="grains" value="uraddal">Urad Dal</input><br/>
+          <input type="checkbox" name="grains" value="moongdal">Moong Dal</input><br/>
+        <input type="checkbox" name="grains" value="channadal"> Channa Dal</input><br/>
+      <input type="checkbox" name="grains" value="flattenedrice">Flattened Rice</input><br/>
+      <input type="checkbox" name="grains" value="greengram">Green Gram</input><br/>
+      <input type="checkbox" name="grains" value="bengalgram">Bengal Gram</input><br/>
+       <input type="checkbox" name="grains" value="bengalgram">Horse Gram</input><br/>
+       <input type="checkbox" name="grains" value="millets">Millets</input><br/>
+    <input type="checkbox" name="grains" value="rava">Rava</input><br/>
+    <input type="checkbox" name="grains" value="rice">Rice</input><br/>
+    <input type="checkbox" name="essentials" value="Oats">Oats</input><br/>
+    <input type="checkbox" name="grains" value="peas">Dried Peas</input><br/>
+    <input type="checkbox" name="grains" value="soya">Soya Beans</input><br/>
+
+   </form>
+</div>
+<!--grains-->
+
+
+
+<!--spices-->
+<div class="col-md-2 animated bounceInRight" id="spices">
+    <form>
+
+    <h1>Spices&nbsp<span class="glyphicon glyphicon-fire"></span></h1>
+        <input type="checkbox" name="spice" value="mustardseeds"> Mustard Seeds</input><br/>
+          <input type="checkbox" name="spice" value="cumin"> Cumin</input><br/>
+        <input type="checkbox" name="spice" value="cardomom"> Cardomom</input><br/>
+      <input type="checkbox" name="spice" value="pepper">Pepper</input><br/>
+    <input type="checkbox" name="spice" value="cinnamon">Cinnamon</input><br/>
+    <input type="checkbox" name="spice" value="turmeric">Turmeric</input><br/>
+    <input type="checkbox" name="spice" value="fenugreek">Fenugreek</input><br/>
+ <input type="checkbox" name="spice" value="asafoetida">Asafoetida</input><br/>
+ <input type="checkbox" name="spice" value="peanuts">Peanuts</input><br/>
+ <input type="checkbox" name="spice" value="dhanya">Coriander Seeds</input><br/>
+ <input type="checkbox" name="spice" value="chillypowder">Chilly Powder</input><br/>
+ <input type="checkbox" name="spice" value="garam">Garam Masala</input><br/>
+ <input type="checkbox" name="spice" value="chole">Chole Masala</input><br/>
+
+  </form>
+ </div>
+
+
+<!--milk and flours-->
+    <div class="col-md-2 animated bounceInRight" id="flours">
+    <form>
+
+
+    <h1>Milk & Flours<span class="glyphicon glyphicon-ice-lolly"></span></h1>
+    <input type="checkbox" name="milkfs" value="milk">Milk</input><br/>
+        <input type="checkbox" name="milkfs" value="milk">Curd</input><br/>
+          <input type="checkbox" name="milkfs" value="ghee">Ghee</input><br/>
+          <input type="checkbox" name="milkfs" value="condensedmilk">Condensed Milk</input><br/>
+          <input type="checkbox" name="milkfs" value="khoa">Khoa</input><br/>
+          <input type="checkbox" name="milkfs" value="khoya">Paneer</input><br/>
+          <input type="checkbox" name="milkfs" value="milkpowder">Dairy Whitener</input><br/>
+          <input type="checkbox" name="milkfs" value="cheese">Cheese</input><br/>
+          <input type="checkbox" name="milkfs" value="butter">Butter</input><br/>
+           <input type="checkbox" name="milkfs" value="ragi">Ragi flour</input><br/>
+          <input type="checkbox" name="milkfs" value="maida">Maida</input><br/>
+	         <input type="checkbox" name="milkfs" value="atta">Atta</input><br/>
+	         <input type="checkbox" name="milkfs" value="riceflour">Rice flour</input><br/>
+
+
+  </form>
+ </div>
+<!--milk and flours-->
+
+
+
+
+<!--essentials-->
+ <div class="col-md-2 animated bounceInRight" id="essentials">
+    <form>
+
+    <h1>Essentials&nbsp<span class="glyphicon glyphicon-certificate"></span></h1>
+
+      <input type="checkbox" name="essentials" value="ginger">Ginger</input><br/>
+      <input type="checkbox" name="essentials" value="bread">Garlic</input><br/>
+      <input type="checkbox" name="essentials" value="bread">Puffed Rice</input><br/>
+        <input type="checkbox" name="essentials" value="bread">Bread</input><br/>
+      	<input type="checkbox" name="essentials" value="vermicilli">Vermicilli</input><br/>
+      	<input type="checkbox" name="grains" value="batter">Corn Flour</input><br/>
+      	<input type="checkbox" name="essentials" value="oil">Cooking Oil</input><br/>
+      	<input type="checkbox" name="essentials" value="bakingsoda">Baking Soda</input><br/>
+      <input type="checkbox" name="essentials" value="Pudina">Pudina</input><br/>
+      <input type="checkbox" name="grains" value="jaggery">Jaggery</input><br/>
+
+    	<input type="checkbox" name="essentials" value="tamarind">Tamarind</input><br/>
+    	<input type="checkbox" name="grains" value="sabudana">Sabudana</input><br/>
+	<input type="checkbox" name="grains" value="batter">Dosa Batter</input><br/>
+
+</form>
+
+ </div>
+<!--essentials-->
+
+
+
+
+<!--recipiecheck-->
+
+<a href="#voila">
+<button type="submit" onclick="writer();" id="findit" class="btn btn-warning">
+<span class="glyphicon glyphicon-eye-open" style="color: black"></span>
+&nbspLet's Find It !
+</button>
+</a>
+
+ <!--recipiecheck-->
+
+
+
+
+ <!--voila-->
+<h1 id="voila"></h1>
+<!--voila-->
+
+
+<!--recipies go here-->
+<div class="container-fluid" id="articles"></div>
+<!--recipies go here-->
+
+
+<!--yesterday's recipie-->
+<section id="setter" class="animated swing"></section>
+<!--yesterday's recipie-->
+
+
+
+<footer class="container-fluid">
+  <h2>&copyCopyright</h2>
+  <h3>Protected</h3>
+ <!-- <h4>Ganesh Sharma,Sanchay DC,Sushanth Gowda</h4>
+  <button class="btn btn-success" onclick="localStorage.clear();" type="submit">Clear Storage</button>-->
+</footer>
+</body>
+
+
+    <script src="js/fp2.js"></script>
+    <script src="js/indexw.js"></script>
+    <script src="js/recipes.js"></script>
+    <script src="js/rc.js"></script>
+
+
+    <!--<script type="text/javascript">
+      function smoothscroll(){
+        var hash=this.hash;
+        var i=0;
+
+        var id=setInterval(scrolld,1000);
+        function scrolld(){
+      if(document.body.children[i].id+"#"==hash)
+      {
+        clearInterval(id);
+      }
+      else{
+        window.scrollBy(0,i);
+        i+=50;
+      }
+    }
+
+      }
+    </script>-->
+
+</body>
+</html>
