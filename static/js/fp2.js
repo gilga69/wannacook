@@ -34,7 +34,7 @@ function login(){
 	if(allow){
 		h1=document.getElementsByTagName("DIV")[0].setAttribute("class","animated hinge");
 		localStorage.setItem("curus",enteredu+enteredp);
-		setTimeout(function(){window.open("welcome.html","_self")},3000);
+		setTimeout(function(){window.location = "/welcome"},3000);
 	}
 	else{
 		alert("Incorrect Username or Password!!");

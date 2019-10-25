@@ -15,7 +15,8 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css?family=Catamaran|Josefin+Sans|Satisfy|Russo+One" rel="stylesheet">
-<link rel="stylesheet" href="css/stylew.css">
+    {% load staticfiles %}
+<link rel="stylesheet" href="{% static 'css/stylew.css' %}">
 
 
 </head>
@@ -259,11 +260,10 @@
 </footer>
 </body>
 
-
-    <script src="js/fp2.js"></script>
-    <script src="js/indexw.js"></script>
-    <script src="js/recipes.js"></script>
-    <script src="js/rc.js"></script>
+    <script src="{% static 'js/fp2.js' %}"></script>
+    <script src="{% static 'js/indexw.js' %}"></script>
+    <script src="{% static 'js/recipes.js' %}"></script>
+    <script src="{% static 'js/rc.js' %}"></script>
 
 
     <!--<script type="text/javascript">
