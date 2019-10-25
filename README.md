@@ -1,2 +1,2 @@
 # wannacook
-JavaScript based cooking app. A soution for the dialy bug of what to cook
+JavaScript based cooking app. A soution for the daily bug of what to cook
